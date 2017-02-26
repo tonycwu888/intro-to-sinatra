@@ -1,0 +1,22 @@
+<div class="container">
+  <form class="" action="/users" method="post">
+    <h1>sign up page / new users</h1>
+    <% if @errors %>
+      <% @errors.each do |error| %>
+  <b><i>  <%= error %></i></b>
+      <% end %>
+      <% end %><br><br><br>
+first name: <br>
+    <input type="text" name="user[first_name]" placeholder="first name"><br><br>
+last name:  <br>
+    <input type="text" name="user[last_name]" placeholder="last name"><br><br>
+email address: <br>
+    <input type="email" name="user[email]" placeholder="email">
+<br><br>
+password:<br>
+    <input type="password" name="user[password]" placeholder="password">
+<br><br>
+    <input type="submit" value="Sign Up">
+  </form>
+
+</div>
